@@ -3,8 +3,14 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                echo "Helllow gautami here"
+                echo "Testing"
             }
         }
+         stage('Build') {
+            steps {
+                echo "Building"
+            }
+        }
+        
     }
 }
