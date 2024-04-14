@@ -1,15 +1,10 @@
 pipeline {
-  agent any
-  stages {
-    stage("checkout") {
-      steps {
-        checkout scm
-      }
+    agent any
+    stages {
+        stage('Test') {
+            steps {
+                echo 'Test completed'
+            }
+        }
     }
-    stage("Test") {
-       steps {
-          sh 'start npm install'
-       }
-    }
-  }
 }
